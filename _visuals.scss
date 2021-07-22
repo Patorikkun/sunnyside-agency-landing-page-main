@@ -1,0 +1,30 @@
+.visuals {
+  height: 60vh;
+  // border: 1px solid red;
+  display: flex;
+
+  .visual {
+    //border: 1px solid red;
+    flex-grow: 1;
+    @mixin visual-img {
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    &:nth-of-type(1) {
+      background: url(images/desktop/image-gallery-milkbottles.jpg) no-repeat;
+      @include visual-img();
+    }
+    &:nth-of-type(2) {
+      background: url(images/desktop/image-gallery-orange.jpg) no-repeat;
+      @include visual-img();
+    }
+    &:nth-of-type(3) {
+      background: url(images/desktop/image-gallery-cone.jpg) no-repeat;
+      @include visual-img();
+    }
+    &:nth-of-type(4) {
+      background: url(images/desktop/image-gallery-sugarcubes.jpg) no-repeat;
+      @include visual-img();
+    }
+  }
+}

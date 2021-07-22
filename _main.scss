@@ -1,0 +1,30 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  background: url(images/desktop/image-header.jpg) no-repeat;
+  background-size: cover;
+
+  header {
+    margin-top: 2em;
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h1 {
+    &.heading {
+      margin-top: 2.5em;
+
+      font-size: 4rem;
+      font-weight: 900;
+      letter-spacing: 0.5rem;
+    }
+  }
+  .arrow {
+    margin-top: 12em;
+    transform: scale(1.2);
+  }
+}

@@ -1,0 +1,55 @@
+footer {
+  height: 40vh;
+  color: hsl(168, 34%, 41%);
+  background: hsl(168, 52%, 66%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  .logo {
+    font-size: 2.5rem;
+  }
+  nav {
+    width: 17.5%;
+    justify-content: space-between;
+    button {
+      color: hsl(168, 34%, 41%);
+      font-size: 1.25rem;
+    }
+  }
+
+  .socials {
+    display: flex;
+    width: 10%;
+    height: 2em;
+
+    justify-content: space-between;
+
+    .media {
+      height: 1.5em;
+      width: 1.5em;
+
+      @mixin icon {
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      &:nth-of-type(1) {
+        background: url(images/icon-facebook.svg);
+        @include icon();
+      }
+      &:nth-of-type(2) {
+        background: url(images/icon-instagram.svg);
+        @include icon();
+      }
+      &:nth-of-type(3) {
+        background: url(images/icon-twitter.svg);
+        @include icon();
+      }
+      &:nth-of-type(4) {
+        background: url(images/icon-pinterest.svg);
+        @include icon();
+      }
+    }
+  }
+}

@@ -1,3 +1,47 @@
-h3 {
-  width: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600;900&family=Fraunces:wght@700;900&display=swap");
+//font-family: 'Barlow', sans-serif;
+//font-family: 'Fraunces, serif
+
+@import "main";
+@import "intro";
+@import "testimonials";
+@import "visuals";
+@import "footer";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  h1,
+  h2,
+  a {
+    font-family: "Fraunces", serif;
+  }
+  p,
+  h3 {
+    font-family: "Barlow", sans-serif;
+  }
+  .logo {
+    font-family: "Barlow", sans-serif;
+    font-size: 3rem;
+  }
+
+  nav {
+    //border: 1px solid red;
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: white;
+      font-family: "Barlow", sans-serif;
+      font-size: 1.5rem;
+
+      &:nth-of-type(4) {
+        font-family: "Fraunces", serif;
+      }
+    }
+  }
 }
